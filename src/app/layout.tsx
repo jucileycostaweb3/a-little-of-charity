@@ -3,6 +3,7 @@ import { Poppins } from 'next/font/google'
 import "./globals.css";
 
 import { cn } from "@/helpers/cn";
+import { Navbar } from "@/components/Navbar/Navbar";
 
 const poppins = Poppins({
   style: 'normal',
@@ -24,6 +25,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={cn("", poppins.className)}>
         <div>
+          <Navbar />  
           {children}  
         </div>
       </body>
