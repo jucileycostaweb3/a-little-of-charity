@@ -1,3 +1,7 @@
+import "@fortawesome/fontawesome-svg-core/styles.css"
+import { config } from "@fortawesome/fontawesome-svg-core"; 
+config.autoAddCss = false;
+
 import type { Metadata } from "next";
 import { Poppins } from 'next/font/google'
 import "./globals.css";
@@ -24,8 +28,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={cn("", poppins.className)}>
-        <div>
+        <div className="flex w-full">
           <Navbar />  
+          
           {children}  
         </div>
       </body>

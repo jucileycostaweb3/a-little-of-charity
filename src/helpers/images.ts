@@ -1,3 +1,3 @@
-export const getArticleImage = (fileName: string) => {
+export const getImage = (fileName: string) => {
   return `/assets/images/${fileName}`;
 };
